@@ -63,7 +63,7 @@ echo.
 cd "%ZLIB_PATH%"
 
 Rem Build Zlib using precompiled asm code for MS Visual C++ with lastest Service Pack ( -D_BIND_TO_CURRENT_VCLIBS_VERSION)
-nmake /NOLOGO -f win32/Makefile.msc clean
+nmake /NOLOGO -f win32\Makefile.msc clean
 nmake /NOLOGO -f win32\Makefile.msc LOC="-DASMV -DASMINF -D_BIND_TO_CURRENT_VCLIBS_VERSION" OBJA="inffas32.obj match686.obj"
 if ERRORLEVEL 1 goto ERROR
 
